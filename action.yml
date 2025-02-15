@@ -56,7 +56,7 @@ runs:
 
         setup_rmz() {
           curl -fsSL --tlsv1.2 --proto '=https' https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash > /dev/null 2>&1
-          cargo binstall -qy rmz
+          cargo binstall -qy rmz@2.2.0
           ln -s ~/.cargo/bin/rmz /usr/local/bin/rmz
         }
 
